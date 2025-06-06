@@ -1,0 +1,16 @@
+[
+  {
+    "id": "saleItem-001",
+    "sale_id": "sale-001",
+    "variant_detail_id": "detail-001",
+    "quantity": 10,
+    "sale_price": 69.99
+  },
+  {
+    "id": "saleItem-002",
+    "sale_id": "sale-002",
+    "variant_detail_id": "detail-003",
+    "quantity": 1,
+    "sale_price": 89.99
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "inv-001",
+    "variant_id": "prodVar-001",
+    "purchase_item_id": "purchaseItem-001",
+    "change_type": "PURCHASE",
+    "quantity_change": 10,
+    "comment": "Stock received from purchase-001",
+    "created_at": "2025-06-03T00:00:00Z"
+  },
+  {
+    "id": "inv-002",
+    "variant_id": "prodVar-002",
+    "purchase_item_id": "purchaseItem-002",
+    "change_type": "PURCHASE",
+    "quantity_change": 20,
+    "comment": "Stock received from purchase-002",
+    "created_at": "2025-06-03T00:00:00Z"
+  },
+  {
+    "id": "inv-003",
+    "variant_id": "prodVar-003",
+    "purchase_item_id": "purchaseItem-003",
+    "change_type": "PURCHASE",
+    "quantity_change": 15,
+    "comment": "Stock received from purchase-002",
+    "created_at": "2025-06-03T00:00:00Z"
+  },
+  {
+    "id": "inv-004",
+    "variant_id": "prodVar-001",
+    "sale_item_id": "saleItem-001",
+    "change_type": "SALE",
+    "quantity_change": -10,
+    "comment": "Sold via sale-001",
+    "created_at": "2025-06-03T00:00:00Z"
+  },
+  {
+    "id": "inv-005",
+    "variant_id": "prodVar-003",
+    "sale_item_id": "saleItem-002",
+    "change_type": "SALE",
+    "quantity_change": -1,
+    "comment": "Sold via sale-002",
+    "created_at": "2025-06-03T00:00:00Z"
+  }
+]

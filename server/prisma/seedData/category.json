@@ -1,0 +1,47 @@
+[
+  {
+    "id": "uniform",
+    "name": "Uniform clothing",
+    "description": "School and Staff uniform"
+  },
+  {
+    "id": "non-uniform",
+    "name": "Non-uniform clothing",
+    "description": "Men and Women Apparel"
+  },
+  {
+    "id": "junior",
+    "name": "Junior Level",
+    "description": "Junior schooling level"
+  },
+  {
+    "id": "primary",
+    "name": "Primary Level",
+    "description": "Primary schooling level"
+  },
+  {
+    "id": "spa",
+    "name": "Sukari Presbyterian Academy",
+    "description": "Sukari Presbyterian Academy"
+  },
+  {
+    "id": "ndiini",
+    "name": "Ndiini School",
+    "description": "Ndiini School"
+  },
+  {
+    "id": "carovana",
+    "name": "Carovana School",
+    "description": "Carovana School"
+  },
+  {
+    "id": "accessories",
+    "name": "Accessories",
+    "description": "Belts, ties, socks"
+  },
+  {
+    "id": "footwear",
+    "name": "Footwear",
+    "description": "Shoes and sandals"
+  }
+]

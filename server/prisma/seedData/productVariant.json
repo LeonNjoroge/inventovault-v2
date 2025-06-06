@@ -1,0 +1,20 @@
+[
+  {
+    "id": "prodVar-001",
+    "name": "Girls Pink Dress",
+    "product_id": "prodCat-001"
+
+  },
+  {
+    "id": "prodVar-002",
+    "name": "Boys Pink Check Shirts",
+    "product_id": "prodCat-002"
+
+  },
+  {
+    "id": "prodVar-003",
+    "name": "Boys Grey Shorts",
+    "product_id": "prodCat-003"
+
+  }
+]

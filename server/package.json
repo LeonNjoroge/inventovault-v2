@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "server": "npx ts-node src/server.ts",
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "apollo-server-express": "^3.13.0",
+    "cors": "^2.8.5",
+    "prisma": "^6.8.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.13.8",
+    "@prisma/client": "^6.9.0",
+    "apollo-server": "^3.13.0",
+    "express": "^4.21.2",
+    "graphql": "^16.11.0"
+  }
+}

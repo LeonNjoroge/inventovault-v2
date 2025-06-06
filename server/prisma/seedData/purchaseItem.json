@@ -1,0 +1,23 @@
+[
+  {
+    "id": "purchaseItem-001",
+    "purchase_id": "purchase-001",
+    "variant_detail_id": "detail-001",
+    "quantity": 10,
+    "cost_price": 50.0
+  },
+  {
+    "id": "purchaseItem-002",
+    "purchase_id": "purchase-002",
+    "variant_detail_id": "detail-002",
+    "quantity": 20,
+    "cost_price": 10.0
+  },
+  {
+    "id": "purchaseItem-003",
+    "purchase_id": "purchase-002",
+    "variant_detail_id": "detail-003",
+    "quantity": 15,
+    "cost_price": 70.0
+  }
+]

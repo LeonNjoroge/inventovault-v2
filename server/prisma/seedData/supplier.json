@@ -1,0 +1,12 @@
+[
+  {
+    "id": "supplier-001",
+    "name": "Uniform Supplies Ltd",
+    "contact_info": "info@uniformsupplies.com"
+  },
+  {
+    "id": "supplier-002",
+    "name": "School Fashion Co",
+    "contact_info": "contact@schoolfashion.co.ke"
+  }
+]

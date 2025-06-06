@@ -1,0 +1,14 @@
+[
+  {
+    "id": "purchase-001",
+    "supplier_id": "supplier-001",
+    "date": "2025-06-03T00:00:00Z",
+    "invoice_no": "INV-1001"
+  },
+  {
+    "id": "purchase-002",
+    "supplier_id": "supplier-002",
+    "date": "2025-06-02T00:00:00Z",
+    "invoice_no": "INV-1002"
+  }
+]
