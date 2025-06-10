@@ -49,7 +49,7 @@ export const inventoryMovementResolvers = {
     },
     InventoryMovement: {
         variant: async (parent: any, _: any, { prisma }: any) => {
-            return await prisma.productVariant.findUnique({
+            return await prisma.variantDetail.findUnique({
                 where: { id: parent.variant_id },
             });
         },

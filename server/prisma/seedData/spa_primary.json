@@ -1,0 +1,117 @@
+[
+  {
+    "product": [
+      {
+        "id": "spa-01",
+        "name": "Girls Pink Dress",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "girls"]
+      },
+      {
+        "id": "spa-02",
+        "name": "Boys Pink Checked Shirt",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "boys"]
+      },
+      {
+        "id": "spa-03",
+        "name": "Grey Shorts",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "boys"]
+      },
+      {
+        "id": "spa-04",
+        "name": "Red P.E Shorts",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "boys", "girls"]
+      },
+      {
+        "id": "spa-05",
+        "name": "Track Suit",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "boys", "girls"]
+      },
+      {
+        "id": "spa-06",
+        "name": "Fleece Jacket",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "boys", "girls"]
+      },
+      {
+        "id": "spa-07",
+        "name": "Red Sweater",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "boys", "girls"]
+      },
+      {
+        "id": "spa-08",
+        "name": "Green T-shirt",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "boys","girls"]
+      },
+      {
+        "id": "spa-09",
+        "name": "White T-shirt",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "boys","girls"]
+      },
+      {
+        "id": "spa-10",
+        "name": "Red T-shirt",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "boys","girls"]
+      },
+      {
+        "id": "spa-11",
+        "name": "Blue T-shirt",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "boys","girls"]
+      },
+      {
+        "id": "spa-12",
+        "name": "Yellow T-shirt",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "boys","girls"]
+      },
+      {
+        "id": "spa-13",
+        "name": "Orange Kids Shirt",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "boys","girls"]
+      },
+      {
+        "id": "spa-14",
+        "name": "T-shirt without logo",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "boys","girls"]
+      },
+      {
+        "id": "spa-15",
+        "name": "Boys Socks",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "boys","girls"]
+      },
+      {
+        "id": "spa-16",
+        "name": "Girls Socks",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "boys","girls"]
+      },
+      {
+        "id": "spa-17",
+        "name": "Girl pink blouse",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "girls"]
+      },
+      {
+        "id": "spa-18",
+        "name": "Light grey trousers",
+        "description": "School Shirt",
+        "categoryIds": ["uniform", "spa", "primary", "boys","girls"]
+      }
+    ],
+    "variantDetail": [
+
+    ]
+  }
+  ]

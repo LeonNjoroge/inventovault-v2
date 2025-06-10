@@ -59,7 +59,7 @@ export const productResolvers = {
             });
         },
         variants: async (parent: any, _: any, { prisma }: any) => {
-            return await prisma.productVariant.findMany({
+            return await prisma.variantDetail.findMany({
                 where: { product_id: parent.id },
             });
         },

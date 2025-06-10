@@ -1,7 +1,7 @@
 [
   {
     "id": "inv-001",
-    "variant_id": "prodVar-001",
+    "product_id": "prod-001",
     "purchase_item_id": "purchaseItem-001",
     "change_type": "PURCHASE",
     "quantity_change": 10,
@@ -10,7 +10,7 @@
   },
   {
     "id": "inv-002",
-    "variant_id": "prodVar-002",
+    "product_id": "prod-002",
     "purchase_item_id": "purchaseItem-002",
     "change_type": "PURCHASE",
     "quantity_change": 20,
@@ -19,7 +19,7 @@
   },
   {
     "id": "inv-003",
-    "variant_id": "prodVar-003",
+    "product_id": "prod-003",
     "purchase_item_id": "purchaseItem-003",
     "change_type": "PURCHASE",
     "quantity_change": 15,
@@ -28,7 +28,7 @@
   },
   {
     "id": "inv-004",
-    "variant_id": "prodVar-001",
+    "product_id": "prod-001",
     "sale_item_id": "saleItem-001",
     "change_type": "SALE",
     "quantity_change": -10,
@@ -37,7 +37,7 @@
   },
   {
     "id": "inv-005",
-    "variant_id": "prodVar-003",
+    "product_id": "prod-002",
     "sale_item_id": "saleItem-002",
     "change_type": "SALE",
     "quantity_change": -1,

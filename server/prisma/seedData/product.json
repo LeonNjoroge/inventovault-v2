@@ -1,29 +1,20 @@
 [
   {
-    "id": "prodCat-001",
-    "name": "Shirt",
-    "sku": "SHT-001",
+    "id": "prod-001",
+    "name": "Girls dress",
     "description": "School Shirt",
-    "price": 69.99,
-    "cost_price": 50.0,
     "categoryIds": ["uniform", "spa", "primary"]
   },
   {
-    "id": "prodCat-002",
-    "name": "Tie",
-    "sku": "TIE-001",
+    "id": "prod-002",
+    "name": "Boys Tie",
     "description": "School Tie",
-    "price": 19.99,
-    "cost_price": 10.0,
     "categoryIds": ["accessories", "uniform"]
   },
   {
-    "id": "prodCat-003",
+    "id": "prod-003",
     "name": "Black Shoes",
-    "sku": "SHE-001",
     "description": "Formal school shoes",
-    "price": 89.99,
-    "cost_price": 70.0,
     "categoryIds": ["footwear", "uniform"]
   }
 ]

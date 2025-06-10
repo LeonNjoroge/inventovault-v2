@@ -1,35 +1,35 @@
 [
   {
     "id": "detail-001",
-    "product_variant_id": "prodVar-001",
+    "product_id": "prod-001",
     "size": "24",
     "quantity": 10,
     "price": 2500.50
   },
   {
     "id": "detail-002",
-    "product_variant_id": "prodVar-001",
+    "product_id": "prod-001",
     "size": "26",
     "quantity": 15,
     "price": 2500.50
   },
   {
     "id": "detail-003",
-    "product_variant_id": "prodVar-002",
+    "product_id": "prod-002",
     "size": "Standard",
     "quantity": 25,
     "price": 2500.50
   },
   {
     "id": "detail-004",
-    "product_variant_id": "prodVar-003",
+    "product_id": "prod-003",
     "size": "38",
     "quantity": 12,
     "price": 2500.50
   },
   {
     "id": "detail-005",
-    "product_variant_id": "prodVar-003",
+    "product_id": "prod-003",
     "size": "40",
     "quantity": 8,
     "price": 2500.50

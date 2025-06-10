@@ -2,6 +2,9 @@ import { PrismaClient } from "@prisma/client";
 import fs from "fs";
 import path from "path";
 
+import { v4 as uuidv4 } from "uuid";
+
+
 const prisma = new PrismaClient();
 
 async function deleteAllData(orderedFileNames: string[]) {
@@ -34,13 +37,44 @@ async function main() {
         "purchase.json",
         "variantDetail.json",
         "supplier.json",
-        "productVariant.json",
         "product.json",
         "category.json"
 
     ];
 
     await deleteAllData(orderedFileNames);
+
+    // Load and transform product data
+    const productPath = path.join(dataDirectory, "product.json");
+    const productData = JSON.parse(fs.readFileSync(productPath, "utf-8"));
+
+    const productIdMap: Record<string, string> = {};
+    const updatedProducts = productData.map((product: any) => {
+        const newId = uuidv4();
+        productIdMap[product.id] = newId;
+        return {
+            ...product,
+            id: newId,
+        };
+    });
+
+    // Load and transform variantDetail data
+    const variantDetailPath = path.join(dataDirectory, "variantDetail.json");
+    const variantData = JSON.parse(fs.readFileSync(variantDetailPath, "utf-8"));
+
+    const updatedVariantDetails = variantData.map((variant: any) => ({
+        ...variant,
+        id: uuidv4(), // Replace variant detail ID too
+        product_id: productIdMap[variant.product_id], // Map to updated product UUID
+    }));
+
+
+    /* #### Replace original file contents (optional) ##### */
+
+    // fs.writeFileSync(productPath, JSON.stringify(updatedProducts, null, 2));
+    // fs.writeFileSync(variantDetailPath, JSON.stringify(updatedVariantDetails, null, 2));
+
+
 
     for (const fileName of orderedFileNames.reverse()) {
         const filePath = path.join(dataDirectory, fileName);

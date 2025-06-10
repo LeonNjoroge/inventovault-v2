@@ -25,35 +25,24 @@ model Product {
   name        String
   sku         String   @unique
   description String?
-  price       Decimal
-  cost_price  Decimal?
   created_at  DateTime @default(now())
 
-  categories Category[]       @relation("ProductCategories")
-  variants   ProductVariant[] // Renamed from `ProductVariant` to `variants` (Prisma convention: plural for arrays)
-}
-
-model ProductVariant {
-  id         String @id @default(uuid())
-  name       String
-  product_id String
-
-  product Product         @relation(fields: [product_id], references: [id])
-  details VariantDetail[]
-
+  categories         Category[]          @relation("ProductCategories")
+  variants           VariantDetail[] // Renamed from `ProductVariant` to `variants` (Prisma convention: plural for arrays)
   inventoryMovements InventoryMovement[]
 }
 
 model VariantDetail {
-  id                 String @id @default(uuid())
-  product_variant_id String
-  size               String
-  quantity           Int
-  price              Float?
+  id         String  @id @default(uuid())
+  product_id String?
+  size       String
+  quantity   Int
+  price      Float?
 
-  productVariant ProductVariant @relation(fields: [product_variant_id], references: [id])
-  PurchaseItem   PurchaseItem[]
-  SaleItem       SaleItem[]
+  product Product? @relation(fields: [product_id], references: [id])
+
+  PurchaseItem PurchaseItem[]
+  SaleItem     SaleItem[]
 }
 
 model Supplier {
@@ -74,14 +63,14 @@ model Purchase {
 }
 
 model PurchaseItem {
-  id                String  @id @default(uuid())
-  purchase_id       String
-  variant_detail_id String?
-  quantity          Int
-  cost_price        Decimal
+  id          String  @id @default(uuid())
+  purchase_id String
+  variant_id  String?
+  quantity    Int
+  cost_price  Decimal
 
   purchase      Purchase       @relation(fields: [purchase_id], references: [id])
-  variantDetail VariantDetail? @relation(fields: [variant_detail_id], references: [id])
+  variantDetail VariantDetail? @relation(fields: [variant_id], references: [id])
 
   InventoryMovement InventoryMovement?
 }
@@ -110,7 +99,7 @@ model SaleItem {
 
 model InventoryMovement {
   id               String               @id @default(uuid())
-  variant_id       String
+  product_id       String
   purchase_item_id String?              @unique
   sale_item_id     String?              @unique
   change_type      InventoryChangeType?
@@ -118,9 +107,9 @@ model InventoryMovement {
   comment          String?
   created_at       DateTime             @default(now())
 
-  variant      ProductVariant @relation(fields: [variant_id], references: [id])
-  purchaseItem PurchaseItem?  @relation(fields: [purchase_item_id], references: [id])
-  saleItem     SaleItem?      @relation(fields: [sale_item_id], references: [id])
+  product      Product       @relation(fields: [product_id], references: [id])
+  purchaseItem PurchaseItem? @relation(fields: [purchase_item_id], references: [id])
+  saleItem     SaleItem?     @relation(fields: [sale_item_id], references: [id])
 }
 
 enum InventoryChangeType {
