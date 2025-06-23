@@ -23,7 +23,6 @@ model Category {
 model Product {
   id          String   @id @default(uuid())
   name        String
-  sku         String   @unique
   description String?
   created_at  DateTime @default(now())
 
