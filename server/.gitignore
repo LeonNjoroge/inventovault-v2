@@ -3,3 +3,6 @@ node_modules
 .env
 
 /generated/prisma
+prisma/seedData/ndiini_primary.
+prisma/seedData/carovana_primary.json
+prisma/seedData/spa_primary.json
