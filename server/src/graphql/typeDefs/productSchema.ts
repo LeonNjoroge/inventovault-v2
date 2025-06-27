@@ -6,9 +6,9 @@ export const productTypeDefs = gql`
         name: String!
         description: String
         created_at: String! # Or use a custom scalar like DateTime
-        categories: [Category!]!
-        variants: [VariantDetail!]!
-        inventoryMovements: [InventoryMovement!]!
+        categories: [Category!]
+        variants: [VariantDetail!]
+        inventoryMovements: [InventoryMovement!]
     }
 
     extend type Query {
