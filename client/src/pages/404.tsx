@@ -4,7 +4,7 @@ export default function NotFoundPage() {
     return (
         <div className="flex items-center justify-center min-h-screen  px-6">
             <div className="max-w-xl text-center">
-                <h1 className="text-6xl font-extrabold text-blue-600">Oops! Broken Link</h1>
+                <h1 className="text-5xl font-extrabold text-blue-600">Oops! Broken Link</h1>
                 <h2 className="mt-4 text-2xl font-semibold text-gray-800">
                     Page Not Found
                 </h2>
