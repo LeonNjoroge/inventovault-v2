@@ -1,15 +1,18 @@
 import React from "react";
 import {LayoutProps} from "@/interfaces";
-import Footer from "@/components/layout/InventoryLayout/Footer";
-import Header from "@/components/layout/InventoryLayout/Header";
+import Sidebar from "@/components/layout/InventoryLayout/Sidebar";
 
 const Layout: React.FC<LayoutProps> = ({children}) => {
     return(
         <>
-            <Header />
-            <main className="min-h-screen p-5">{children}</main>
-            <Footer />
+            <div className="flex">
+                <Sidebar />
+                <main className="ml-64 w-full min-h-screen bg-gray-50">
+                    <div className="p-6">{children}</div>
+                </main>
+            </div>
         </>
+
     );
 }
 
