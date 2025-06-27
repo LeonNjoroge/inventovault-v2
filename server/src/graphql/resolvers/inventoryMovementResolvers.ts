@@ -17,27 +17,30 @@ export const inventoryMovementResolvers = {
             }
         },
     },
+
     Mutation: {
-        createInventoryMovement: async (_: any, args: any, { prisma }: any) => {
+        createInventoryMovement: async (_: any, { input }: any, { prisma }: any) => {
             try {
-                return await prisma.inventoryMovement.create({ data: args });
+                return await prisma.inventoryMovement.create({ data: input });
             } catch (error) {
                 console.error('Error creating inventoryMovement:', error);
                 throw new Error('Failed to create inventoryMovement');
             }
         },
+
         updateInventoryMovement: async (
             _: any,
-            { id, ...args }: { id: string; [key: string]: any },
+            { id, input }: { id: string; input: any },
             { prisma }: any
         ) => {
             try {
-                return await prisma.inventoryMovement.update({ where: { id }, data: args });
+                return await prisma.inventoryMovement.update({ where: { id }, data: input });
             } catch (error) {
                 console.error(`Error updating inventoryMovement with id ${id}:`, error);
                 throw new Error('Failed to update inventoryMovement');
             }
         },
+
         deleteInventoryMovement: async (_: any, { id }: { id: string }, { prisma }: any) => {
             try {
                 return await prisma.inventoryMovement.delete({ where: { id } });
@@ -47,10 +50,11 @@ export const inventoryMovementResolvers = {
             }
         },
     },
+
     InventoryMovement: {
-        variant: async (parent: any, _: any, { prisma }: any) => {
-            return await prisma.variantDetail.findUnique({
-                where: { id: parent.variant_id },
+        product: async (parent: any, _: any, { prisma }: any) => {
+            return await prisma.product.findUnique({
+                where: { id: parent.product_id },
             });
         },
         purchaseItem: async (parent: any, _: any, { prisma }: any) => {

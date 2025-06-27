@@ -2,7 +2,9 @@ export const variantDetailResolvers = {
     Query: {
         variantDetail: async (_: any, { id }: { id: string }, { prisma }: any) => {
             try {
-                return await prisma.variantDetail.findUnique({ where: { id } });
+                return await prisma.variantDetail.findUnique({
+                    where: { id },
+                });
             } catch (error) {
                 console.error(`Error fetching variantDetail with id ${id}:`, error);
                 throw new Error('Failed to fetch variantDetail');
@@ -17,18 +19,22 @@ export const variantDetailResolvers = {
             }
         },
     },
+
     Mutation: {
-        createVariantDetail: async (_: any, args: any, { prisma }: any) => {
+        createVariantDetail: async (_: any, { input }: any, { prisma }: any) => {
             try {
-                return await prisma.variantDetail.create({ data: args });
+                return await prisma.variantDetail.create({ data: input });
             } catch (error) {
                 console.error('Error creating variantDetail:', error);
                 throw new Error('Failed to create variantDetail');
             }
         },
-        updateVariantDetail: async (_: any, { id, ...args }: { id: string; [key: string]: any }, { prisma }: any) => {
+        updateVariantDetail: async (_: any, { id, input }: any, { prisma }: any) => {
             try {
-                return await prisma.variantDetail.update({ where: { id }, data: args });
+                return await prisma.variantDetail.update({
+                    where: { id },
+                    data: input,
+                });
             } catch (error) {
                 console.error(`Error updating variantDetail with id ${id}:`, error);
                 throw new Error('Failed to update variantDetail');
@@ -43,11 +49,14 @@ export const variantDetailResolvers = {
             }
         },
     },
+
     VariantDetail: {
-        productVariant: async (parent: any, _: any, { prisma }: any) => {
-            return await prisma.productVariant.findUnique({
-                where: { id: parent.product_variant_id },
-            });
+        product: async (parent: any, _: any, { prisma }: any) => {
+            return parent.product_id
+                ? await prisma.product.findUnique({
+                    where: { id: parent.product_id },
+                })
+                : null;
         },
         purchaseItems: async (parent: any, _: any, { prisma }: any) => {
             return await prisma.purchaseItem.findMany({

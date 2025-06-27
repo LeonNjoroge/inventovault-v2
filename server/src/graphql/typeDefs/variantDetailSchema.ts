@@ -6,8 +6,8 @@ export const variantDetailTypeDefs = gql`
         size: String!
         quantity: Int!
         price: Float
-        product_variant_id: ID!
-        productVariant: ProductVariant!
+        product_id: ID
+        product: Product
         purchaseItems: [PurchaseItem!]!
         saleItems: [SaleItem!]!
     }
@@ -21,14 +21,14 @@ export const variantDetailTypeDefs = gql`
         size: String!
         quantity: Int!
         price: Float
-        product_variant_id: ID!
+        product_id: ID
     }
 
     input UpdateVariantDetailInput {
         size: String
         quantity: Int
         price: Float
-        product_variant_id: ID
+        product_id: ID
     }
 
     extend type Mutation {
@@ -36,6 +36,4 @@ export const variantDetailTypeDefs = gql`
         updateVariantDetail(id: ID!, input: UpdateVariantDetailInput!): VariantDetail!
         deleteVariantDetail(id: ID!): VariantDetail!
     }
-
-
 `;

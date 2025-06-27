@@ -10,26 +10,26 @@ export const inventoryMovementTypeDefs = gql`
 
     type InventoryMovement {
         id: ID!
-        variant_id: String!
+        product_id: String!
         purchase_item_id: String
         sale_item_id: String
         change_type: InventoryChangeType
         quantity_change: Int!
         comment: String
-        created_at: String! # Consider using a custom scalar like DateTime
+        created_at: String!
 
-        variant: ProductVariant!
+        product: Product!
         purchaseItem: PurchaseItem
         saleItem: SaleItem
     }
 
-    type Query {
+    extend type Query {
         inventoryMovement(id: ID!): InventoryMovement
         inventoryMovements: [InventoryMovement!]!
     }
 
     input CreateInventoryMovementInput {
-        variant_id: String!
+        product_id: String!
         purchase_item_id: String
         sale_item_id: String
         change_type: InventoryChangeType
@@ -38,7 +38,7 @@ export const inventoryMovementTypeDefs = gql`
     }
 
     input UpdateInventoryMovementInput {
-        variant_id: String
+        product_id: String
         purchase_item_id: String
         sale_item_id: String
         change_type: InventoryChangeType
@@ -46,12 +46,9 @@ export const inventoryMovementTypeDefs = gql`
         comment: String
     }
 
-    type Mutation {
+    extend type Mutation {
         createInventoryMovement(input: CreateInventoryMovementInput!): InventoryMovement!
-
         updateInventoryMovement(id: ID!, input: UpdateInventoryMovementInput!): InventoryMovement!
-
         deleteInventoryMovement(id: ID!): InventoryMovement!
     }
-
 `;
