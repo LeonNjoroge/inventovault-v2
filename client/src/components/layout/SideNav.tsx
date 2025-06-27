@@ -1,11 +1,11 @@
 import React from "react";
 
-const Header: React.FC = () => {
+const SideNav: React.FC = () => {
     return(
         <div>
-            Header
+            SideNav
         </div>
     );
 }
 
-export default Header;
+export default SideNav;
