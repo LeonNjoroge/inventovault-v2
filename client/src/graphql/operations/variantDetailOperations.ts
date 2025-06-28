@@ -1,5 +1,4 @@
 import { gql } from "@apollo/client";
-
 // === QUERIES ===
 
 // Get all variant details
