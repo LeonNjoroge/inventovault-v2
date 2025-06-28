@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Home, Package, BarChart, Archive, Settings } from "lucide-react";
+import {Package, BarChart, Archive, Settings, ChartPie} from "lucide-react";
 
 const navItems = [
-    { href: "/dashboard", label: "Dashboard", icon: <Home size={20} /> },
+    { href: "/dashboard", label: "Dashboard", icon: <ChartPie size={20} /> },
     { href: "/inventory", label: "Inventory", icon: <Archive size={20} /> },
     { href: "/products", label: "Products", icon: <Package size={20} /> },
     { href: "/reports", label: "Reports", icon: <BarChart size={20} /> },
@@ -24,7 +24,7 @@ const Sidebar = () => {
                     {navItems.map((item) => (
                         <Link key={item.href} href={item.href}>
                             <div
-                                className={`flex items-center px-6 py-3 mr-2 hover:bg-blue-50 cursor-pointer transition rounded-r-full ${
+                                className={`flex items-center px-6 py-4 mx-2 mt-5 hover:bg-blue-50 cursor-pointer transition rounded-xl ${
                                     router.pathname === item.href
                                         ? "bg-blue-100 text-blue-700 font-semibold"
                                         : "text-gray-700"
