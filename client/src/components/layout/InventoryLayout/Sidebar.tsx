@@ -24,7 +24,7 @@ const Sidebar = () => {
                     {navItems.map((item) => (
                         <Link key={item.href} href={item.href}>
                             <div
-                                className={`flex items-center px-6 py-4 mx-2 mt-5 hover:bg-blue-50 cursor-pointer transition rounded-xl ${
+                                className={`flex items-center px-6 py-3 mx-2 mt-7 hover:bg-blue-50 cursor-pointer transition rounded-xl ${
                                     router.pathname === item.href
                                         ? "bg-blue-100 text-blue-700 font-semibold"
                                         : "text-gray-700"
