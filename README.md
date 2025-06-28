@@ -113,7 +113,7 @@ npm run dev
 
 ## 👨‍💻 Author
 
-**Leon Muraguri**  
+**Leon Njoroge**  
 🖥️ [leoncreates.online](https://leoncreates.online)
 
 ---
