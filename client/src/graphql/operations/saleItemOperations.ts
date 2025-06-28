@@ -15,7 +15,6 @@ export const GET_SALE_ITEMS = gql`
                 id
                 date
                 total_amount
-                payment_method
                 customer_id
             }
             variantDetail {
@@ -46,7 +45,6 @@ export const GET_SALE_ITEM = gql`
                 id
                 date
                 total_amount
-                payment_method
                 customer_id
             }
             variantDetail {
