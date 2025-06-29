@@ -103,29 +103,6 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* Stats Section */}
-                <section className="mt-32 px-6 sm:px-12 max-w-6xl mx-auto text-center">
-                    <div className="bg-white/70 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/20 p-8 md:p-16 relative overflow-hidden">
-                        <h3 className="text-3xl md:text-4xl font-bold text-blue-800 mb-12">
-                            Trusted by Growing Businesses Worldwide
-                        </h3>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            {[
-                                { number: "99.9%", label: "Accuracy Rate", icon: "🎯" },
-                                { number: "24/7", label: "Real-time Updates", icon: "⚡" },
-                                { number: "100+", label: "Reduced Hours", icon: "🌟" }
-                            ].map((stat, idx) => (
-                                <div key={idx}>
-                                    <div className="text-4xl mb-2">{stat.icon}</div>
-                                    <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
-                                        {stat.number}
-                                    </div>
-                                    <p className="text-gray-600 font-medium">{stat.label}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
 
 
                 {/* CTA Section */}
