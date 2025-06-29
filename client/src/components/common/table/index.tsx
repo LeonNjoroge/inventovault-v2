@@ -47,7 +47,7 @@ export function Table<T extends object>({ data, columns, loading = false, onRowC
         table.getRowModel().rows.map(row => (
             <tr
                 key={row.id}
-    className="hover:bg-gray-100 cursor-pointer"
+    className="hover:bg-gray-100 bg-white cursor-pointer"
     onClick={() => onRowClick?.(row.original)}
 >
     {row.getVisibleCells().map(cell => (
