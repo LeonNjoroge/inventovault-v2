@@ -2,7 +2,7 @@ import React from "react";
 import {Grid} from "@mui/system";
 import AssessmentIcon from '@mui/icons-material/Assessment';
 
-import { Typography, Card, CardContent, Box } from '@mui/material';
+import { Card, CardContent } from '@mui/material';
 
 
 const Inventory = () => {
@@ -18,40 +18,13 @@ const Inventory = () => {
                 <Grid container spacing={2} >
                     {/* Inventory Summary */}
 
-                    {/*<Grid size={4}>*/}
-                    {/*    <div className="flex-col bg-white px-6 py-4">*/}
-
-                    {/*        <div className="flex justify-between">*/}
-                    {/*            <h2>Inventory Summary</h2>*/}
-                    {/*            <AssessmentIcon />*/}
-                    {/*        </div>*/}
-
-                    {/*        <div>*/}
-                    {/*            <h3>Total Stock</h3>*/}
-                    {/*        </div>*/}
-
-                    {/*        <div>*/}
-                    {/*            <h3>Total Products</h3>*/}
-                    {/*        </div>*/}
-
-                    {/*        <div>*/}
-                    {/*            <h3>Low Stock Items</h3>*/}
-                    {/*        </div>*/}
-
-                    {/*        <div>*/}
-                    {/*            <h3>Out of Stock Items</h3>*/}
-                    {/*        </div>*/}
-
-                    {/*    </div>*/}
-                    {/*</Grid>*/}
-
                     <Grid size={4}>
                         <Card className="shadow-md rounded-full">
-                            <CardContent className="bg-white px-6 py-4 flex flex-col space-y-4">
+                            <CardContent className="bg-white px-6 py-4 flex flex-col space-y-4 rounded-full">
 
                                 {/* Header */}
                                 <div className="flex justify-between items-center">
-                                    <Typography variant="h6">Inventory Summary</Typography>
+                                    <span className="text-xl font-semibold">Inventory Summary</span>
                                     <AssessmentIcon className="text-gray-500" />
                                 </div>
 
